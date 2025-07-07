@@ -2,21 +2,18 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Lời chúc gửi đến em 💌</title>
+  <title>Trang Chữa Lành</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>💖 Gửi đến Như Quỳnh 💖</h1>
-    <p class="message" id="loveMessage">Nhấn vào nút bên dưới để nhận lời chúc nha 😘</p>
-    <button onclick="showWish()">Nhận lời chúc 💌</button>
-  </div>
-
-  <audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-    Trình duyệt không hỗ trợ âm thanh.
+  <audio autoplay loop>
+    <source src="audio/background.mp3" type="audio/mp3">
   </audio>
-
+  <div class="container">
+    <h1>🌿 Lời chữa lành cho bạn Vy 🌿</h1>
+    <p class="healing-quote" id="quote">hãy bấm vào...</p>
+    <button onclick="showHealing()">💌 Nhận lời nhắn</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
