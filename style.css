@@ -1,1 +1,37 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #333;
+  text-align: center;
+  padding: 60px;
+}
 
+.container {
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.healing-quote {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #ffafbd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffc3a0;
+}
