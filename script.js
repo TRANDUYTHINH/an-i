@@ -1,22 +1,19 @@
-function showWish() {
-  const messages = [
-    "🌸 Chúc em ngày mới vui vẻ, luôn cười thật tươi nhé!",
-    "☀️ Mỗi ngày bên em đều là một ngày tuyệt vời.💕",
-    "🍀 Chúc em lúc nào cũng xinh đẹp và hạnh phúc như bây giờ.",
-    "💕 Chỉ cần em vui, anh cũng vui.",
-    "🌟 Anh chúc công chúa của anh luôn rạng rỡ như ánh nắng.",
-    "☁️ Chúc em một ngày nhẹ nhàng, không buồn, không lo.",
-    "🎵 Anh chúc trái tim bé nhỏ của em luôn ấm áp.",
-    "🍫 Chúc cô bé ngọt ngào của anh luôn hạnh phúc như kẹo.",
-    "🐻 Chúc gấu nhỏ của anh luôn được yêu thương thật nhiều."
-  ];
+const quotes = [
+  "🌸 Bạn Đừng Buồn Nữa Nha",
+  "🌈 Miệng thiên hạ là dao hai lưỡi",
+  "☕ Đừng bận tâm nha cố lên đừng để ý lời nói của những người chê bay",
+  "🕊️ Cảm xúc của bạn là hợp lý, dù có ai nói gì đi nữa.",
+  "🌼 Bạn đủ tốt – và bạn luôn đủ đầy.",
+  "🍀 Mỗi ngày là một cơ hội để bạn bắt đầu lại và yêu thương chính mình.",
+  "Tác giả kêu là :  Yen Anh!"
+];
 
-  const randomIndex = Math.floor(Math.random() * messages.length);
-  const message = document.getElementById("loveMessage");
-  message.innerText = messages[randomIndex];
-
-  // Phát nhạc nền
-  const bgMusic = document.getElementById("bgMusic");
-  bgMusic.play();
+function showHealing() {
+  const quote = document.getElementById("quote");
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  quote.style.opacity = 0;
+  setTimeout(() => {
+    quote.innerText = randomQuote;
+    quote.style.opacity = 1;
+  }, 300);
 }
-
